@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home"
+            android:title="HOME"
+            android:id="@+id/nav_home"/>
+        <item
+
+            android:icon="@drawable/movie"
+            android:title="MOVIES"
+            android:id="@+id/nav_movies"   />
+        <item
+            android:icon="@drawable/tv"
+            android:title="TV SHOWS"
+            android:id="@+id/nav_tv"/>
+        <item
+            android:icon="@drawable/trend"
+            android:title="TRENDING"
+            android:id="@+id/nav_trend"/>
+        <item
+            android:icon="@drawable/people"
+            android:title="PEOPLE"
+            android:id="@+id/nav_people"/>
+    </group>
+
+    <item android:title="Personal">
+        <menu>
+            <item
+                android:id="@+id/nav_favor"
+                android:icon="@drawable/favorite"
+                android:title="FAVORITE" />
+            <item
+                android:id="@+id/nav_list"
+                android:icon="@drawable/wachlist"
+                android:title="WATCH LIST" />
+        </menu>
+    </item>
+
+</menu>

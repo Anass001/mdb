@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/drawer_layout" android:background="#121212" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:background="@drawable/default_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layoutDirection="rtl"
+        app:queryHint="Search..." />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/search_layout"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center"
+                    android:id="@+id/simpletxtview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="210.0dip"
+                    android:text="@string/search_view_center_text" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_mov_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/sltprogress"
+                >
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewHome"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-4577547346540393/7918328096"/>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablt"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="?actionBarSize"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
