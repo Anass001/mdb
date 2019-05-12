@@ -145,13 +145,13 @@ public class GetResFromApi {
                         try {
                             JSONObject mainObject = new JSONObject(jsonStr);
                             JSONArray results = mainObject.getJSONArray("results");
-                            for (int i = 0 ; i < 10 ; i++){
+                            for (int i = 0 ; i < results.length() ; i++){
                                 titles = results.getJSONObject(i).getString("name");
                                 imgurl ="https://image.tmdb.org/t/p/w500/"+ results.getJSONObject(i).getString("profile_path");
                                 id = results.getJSONObject(i).getInt("id");
                                 list.add(new Movies(titles,imgurl,id ,media_type));
                             }
-                            list.add(new Movies("plus","",696969,"trendpeople"));
+                            //list.add(new Movies("plus","",696969,"trendpeople"));
 
 
                         }

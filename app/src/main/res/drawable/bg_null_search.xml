@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#606060"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/framelandscape"
+        android:bottom="840dp"
+        android:left="432dp"
+        android:right="432dp"
+        android:top="840dp"/>
+</layer-list>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15086440200",
+    "firebase_url": "https://mtdb-2d4e0.firebaseio.com",
+    "project_id": "mtdb-2d4e0",
+    "storage_bucket": "mtdb-2d4e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15086440200:android:4bbc9ff40f5f956d",
+        "android_client_info": {
+          "package_name": "com.zeneo.tmdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15086440200-np4smolg442lpgo07gjfn4f8v2bj9hvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zeneo.tmdb",
+            "certificate_hash": "4cdb4700ed61639b46fa45f31cd8ffc362a0e890"
+          }
+        },
+        {
+          "client_id": "15086440200-h1veudghflisqpnb32fecu4uun97po3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2QcQbLK7CkEDxUUP6ZpDuhgTgSHWUtHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15086440200-h1veudghflisqpnb32fecu4uun97po3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

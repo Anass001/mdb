@@ -56,7 +56,7 @@ public class SearchListAdapter extends RecyclerView.Adapter<SearchListAdapter.Vi
                 break;
         }
         Glide.with(context).load(list.get(position).getImgurl())
-                .apply(centerCropTransform().error(R.drawable.bg_null))
+                .apply(centerCropTransform().error(R.drawable.bg_null_search))
                 .into(holder.imageView);
         final Intent[] intent = new Intent[1];
         holder.layout.setOnClickListener(new View.OnClickListener() {
